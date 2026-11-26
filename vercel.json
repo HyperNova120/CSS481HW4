@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/flickr/:path*", "destination": "https://api.flickr.com/services/feeds/:path*" }
+  ]
+}

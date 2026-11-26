@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #111;
+  color: #eee;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.6rem;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  cursor: pointer;
+  text-align: center;
+}
+
+.card img,
+.placeholder {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.placeholder {
+  background: #333;
+  display: grid;
+  place-items: center;
+}
+
+.detail {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.detail img {
+  width: 300px;
+  max-width: 100%;
+  align-self: flex-start;
+  border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+  .detail {
+    flex-direction: column;
+  }
+}
+
+nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+nav .active {
+  background: #f5c518;
+  color: #111;
+  font-weight: 600;
+}
+
+.photos {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.photos img {
+  aspect-ratio: 1;
+}
